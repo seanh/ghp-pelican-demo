@@ -1,0 +1,10 @@
+AUTHOR = 'Sean Hammond'
+SITENAME = 'Pelican GitHub Pages Demo'
+PATH = 'content'
+TIMEZONE = 'Europe/London'
+DEFAULT_LANG = 'en'
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
