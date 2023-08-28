@@ -1,15 +1,17 @@
-name: Deploy Pelican site to GitHub Pages
+name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]
   workflow_dispatch:
 jobs:
-  Deploy:
-    uses: seanh/pelican-github-pages/.github/workflows/pelican.yml@main
+  deploy:
+    uses: "seanh/pelican-github-pages/.github/workflows/pelican.yml@main"
     permissions:
-      contents: read
-      pages: write
-      id-token: write
+      contents: "read"
+      pages: "write"
+      id-token: "write"
     with:
+      settings: "my_settings.py"
+      output-path: "__output__/"
       cache: true
-      cache-path: __cache__
+      cache-path: "__cache__"

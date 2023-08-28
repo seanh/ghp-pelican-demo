@@ -15,3 +15,4 @@ GZIP_CACHE = False
 CONTENT_CACHING_LAYER = 'generator'
 WITH_FUTURE_DATES = False
 CACHE_PATH = '__cache__'
+OUTPUT_PATH = '__output__'
