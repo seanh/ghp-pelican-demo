@@ -12,3 +12,4 @@ jobs:
       id-token: write
     with:
       cache: true
+      cache-path: __cache__
