@@ -44,7 +44,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: output/
+          path: __output__/
   deploy:
     environment:
       name: github-pages
