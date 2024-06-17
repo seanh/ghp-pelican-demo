@@ -1,4 +1,4 @@
-# gha-pelican-demo
+# ghp-pelican-demo
 
 This is a demo repo for [my Pelican GitHub Pages workflow](https://github.com/seanh/gha-pelican).
 
