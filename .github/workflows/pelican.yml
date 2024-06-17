@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   Deploy:
-    uses: seanh/ghp-pelican/.github/workflows/pelican.yml@1a2945f80a9a23ddee7b0446f1cb26bd8b3a0bcc
+    uses: seanh/ghp-pelican/.github/workflows/pelican.yml@84af133ff02c740337d769cb18a65c5c30d622f8
     permissions:
       contents: read
       pages: write
