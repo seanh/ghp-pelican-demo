@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "${{ github.event_name }"
-          echo "${{ github.ref_type }"
-          echo "${{ github.ref }"
+          echo "${{ github.event_name }}"
+          echo "${{ github.ref_type }}"
+          echo "${{ github.ref }}"
   Deploy:
     uses: seanh/pelican/.github/workflows/github_pages.yml@pelican_decouple_build_workflow-single-file
     permissions:
