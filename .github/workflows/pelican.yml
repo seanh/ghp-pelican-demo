@@ -1,8 +1,10 @@
 name: Deploy
 on:
+  pull_request:
   push:
     branches: ["main"]
   workflow_dispatch:
+  workflow_call:
 jobs:
   Deploy:
     uses: seanh/pelican/.github/workflows/github_pages.yml@pelican_decouple_build_workflow-single-file
@@ -14,4 +16,4 @@ jobs:
       settings: "publishconf.py"
       requirements: "pelican[markdown] typogrify"
       theme: "https://github.com/seanh/sidecar.git"
-      deploy: true
+      deploy: github.event_name != "pull_request" && github.ref_type == "branch" && github.ref == "main"
