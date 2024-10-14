@@ -1,11 +1,12 @@
-name: Deploy
+name: Test build
 on:
-  push:
-    branches: ["main"]
+  pull_request:
   workflow_dispatch:
+  workflow_call:
 jobs:
-  Deploy:
-    uses: noelmiller/pelican/.github/workflows/github_pages.yml@pelican_decouple_build_workflow
+  Test_build:
+    name: Test build
+    uses: noelmiller/pelican/.github/workflows/build.yml@pelican_decouple_build_workflow
     permissions:
       contents: read
       pages: write
