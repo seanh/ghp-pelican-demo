@@ -6,7 +6,7 @@ on:
 jobs:
   Test_build:
     name: Test build
-    uses: noelmiller/pelican/.github/workflows/build.yml@pelican_decouple_build_workflow
+    uses: seanh/pelican/.github/workflows/github_pages.yml@pelican_decouple_build_workflow-single-file
     permissions:
       contents: read
       pages: write
