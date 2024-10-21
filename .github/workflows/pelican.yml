@@ -12,7 +12,7 @@ on:
         type: boolean
 jobs:
   Deploy:
-    uses: seanh/pelican/.github/workflows/github_pages.yml@pelican_decouple_build_workflow-single-file
+    uses: noelmiller/pelican/.github/workflows/github_pages.yml@pelican_decouple_build_workflow
     permissions:
       contents: read
       pages: write
